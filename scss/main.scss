@@ -1,4 +1,4 @@
-$icon-font-path: "/vendors/bootstrap/assets/fonts/bootstrap/";
+$icon-font-path: "../vendors/bootstrap/assets/fonts/bootstrap/";
 
 @import 'variables';
 
@@ -27,8 +27,38 @@ body {
   }
 }
 
+#navigation{
+  position: fixed;
+  z-index: 1;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 40px 0 10px;
+  border: 1px solid #fff;
+
+  li > a{
+    font-family: serif;
+    font-style: italic;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+#mapIcon{
+  position: fixed;
+  z-index: 1;
+  bottom: 15px;
+  right: 15px;
+  font-size: 48px;
+
+  a{
+    color: #fff;
+  }
+}
+
 #content{
   .section{
     padding-top: 60px;
   }
 }
+

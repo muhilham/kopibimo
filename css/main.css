@@ -369,8 +369,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("/vendors/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("/vendors/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/vendors/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("/vendors/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("/vendors/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("/vendors/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("../vendors/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("../vendors/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../vendors/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../vendors/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../vendors/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../vendors/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 
 /* line 22, ../vendors/bootstrap/assets/stylesheets/bootstrap/_glyphicons.scss */
@@ -8601,7 +8601,38 @@ body {
   margin: auto;
 }
 
-/* line 31, ../scss/main.scss */
+/* line 30, ../scss/main.scss */
+#navigation {
+  position: fixed;
+  z-index: 1;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 40px 0 10px;
+  border: 1px solid #fff;
+}
+/* line 38, ../scss/main.scss */
+#navigation li > a {
+  font-family: serif;
+  font-style: italic;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* line 47, ../scss/main.scss */
+#mapIcon {
+  position: fixed;
+  z-index: 1;
+  bottom: 15px;
+  right: 15px;
+  font-size: 48px;
+}
+/* line 54, ../scss/main.scss */
+#mapIcon a {
+  color: #fff;
+}
+
+/* line 60, ../scss/main.scss */
 #content .section {
   padding-top: 60px;
 }
