@@ -1,76 +1,76 @@
 @font-face {
   font-family: 'Bodoni MT';
-  src: url("fonts/BOD_R.ttf");
+  src: url("../fonts/BOD_R.TTF");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Bodoni MT';
-  src: url("fonts/BOD_I.ttf");
+  src: url("../fonts/BOD_I.TTF");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Bodoni MT';
-  src: url("fonts/BOD_B.ttf");
+  src: url("../fonts/BOD_B.TTF");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Bodoni MT';
-  src: url("fonts/BOD_BI.ttf");
+  src: url("../fonts/BOD_BI.TTF");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Bodoni MT Black';
-  src: url("fonts/BOD_BLAR.ttf");
+  src: url("../fonts/BOD_BLAR.TTF");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Bodoni MT Black';
-  src: url("fonts/BOD_BLAI.ttf");
+  src: url("../fonts/BOD_BLAI.TTF");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Bodoni MT Condensed';
-  src: url("fonts/BOD_CB.ttf");
+  src: url("../fonts/BOD_CB.TTF");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Bodoni MT Condensed';
-  src: url("fonts/BOD_CBI.ttf");
+  src: url("../fonts/BOD_CBI.TTF");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Bodoni MT Condensed';
-  src: url("fonts/BOD_CI.ttf");
+  src: url("../fonts/BOD_CI.TTF");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Bodoni MT Condensed';
-  src: url("fonts/BOD_CR.ttf");
+  src: url("../fonts/BOD_CR.TTF");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Bodoni MT Poster';
-  src: url("fonts/BOD_PSTC.ttf");
+  src: url("../fonts/BOD_PSTC.TTF");
 }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -8662,13 +8662,14 @@ body {
   background-color: #000;
   color: #fff;
   font-family: 'Bodoni MT', serif;
+  position: relative;
 }
 
-/* line 18, ../scss/main.scss */
+/* line 19, ../scss/main.scss */
 .navbar {
   background-color: rgba(0, 0, 0, 0);
 }
-/* line 22, ../scss/main.scss */
+/* line 23, ../scss/main.scss */
 .navbar .navbar-brand {
   position: absolute;
   width: 100%;
@@ -8677,7 +8678,7 @@ body {
   margin: auto;
 }
 
-/* line 31, ../scss/main.scss */
+/* line 32, ../scss/main.scss */
 #navigation {
   position: fixed;
   z-index: 1;
@@ -8686,7 +8687,7 @@ body {
   padding: 10px 40px 0 10px;
   border: 1px solid #fff;
 }
-/* line 39, ../scss/main.scss */
+/* line 40, ../scss/main.scss */
 #navigation li > a {
   font-style: italic;
   color: #fff;
@@ -8694,7 +8695,7 @@ body {
   font-weight: bold;
 }
 
-/* line 47, ../scss/main.scss */
+/* line 48, ../scss/main.scss */
 #mapIcon {
   position: fixed;
   z-index: 1;
@@ -8702,12 +8703,90 @@ body {
   right: 15px;
   font-size: 48px;
 }
-/* line 54, ../scss/main.scss */
+/* line 55, ../scss/main.scss */
 #mapIcon a {
   color: #fff;
 }
 
-/* line 60, ../scss/main.scss */
+/* line 61, ../scss/main.scss */
 #content .section {
   padding-top: 60px;
+  position: relative;
+}
+
+/* line 67, ../scss/main.scss */
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  padding: 15px 0;
+}
+
+/* line 4, ../scss/_sections.scss */
+#section2 h2 {
+  padding-top: 50%;
+  font-size: 32px;
+}
+/* line 9, ../scss/_sections.scss */
+#section2 p {
+  padding-top: 50%;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+/* line 17, ../scss/_sections.scss */
+#section3 h2 {
+  position: relative;
+  padding-top: 50%;
+  left: 60px;
+  text-indent: -60px;
+  font-size: 48px;
+}
+/* line 24, ../scss/_sections.scss */
+#section3 h2 small {
+  font-size: 32px;
+  color: #fff;
+}
+/* line 28, ../scss/_sections.scss */
+#section3 h2 span {
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+  width: 100px;
+  margin-left: 10px;
+}
+
+/* line 40, ../scss/_sections.scss */
+#section5 h2 {
+  text-align: center;
+  text-indent: -190px;
+  font-size: 90px;
+  line-height: 76px;
+  margin-bottom: 30px;
+  padding-top: 50%;
+}
+/* line 48, ../scss/_sections.scss */
+#section5 h2 small {
+  font-size: 32px;
+  color: #fff;
+}
+/* line 52, ../scss/_sections.scss */
+#section5 h2 span {
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+  width: 100px;
+  margin: 0 -10px;
+}
+
+/* line 62, ../scss/_sections.scss */
+#section8 h2 {
+  padding-top: 40%;
+}
+/* line 66, ../scss/_sections.scss */
+#section8 input {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0;
+  border: 2px solid #fff;
+  margin: 40px 0;
 }

@@ -2,36 +2,42 @@ $(document).ready(function () {
   // Function to run after section changed
   // All animation goes here
   var afterLoadHandler = {
-    'section1': function () {
+    'home': function () {
       $('#navigation, #mapIcon').fadeOut();
     },
 
-    'section2': function () {
+    'journey': function () {
       $('#navigation, #mapIcon').fadeIn();
     },
 
-    'section3': function () {
+    'heritage': function () {
+      $('#navigation, #mapIcon').fadeIn();
     },
 
-    'section4': function () {
+    'islands': function () {
+      $('#navigation, #mapIcon').fadeIn();
     },
 
-    'section5': function () {
+    'coffee': function () {
+      $('#navigation, #mapIcon').fadeIn();
     },
 
-    'section6': function () {
+    'brewing': function () {
+      $('#navigation, #mapIcon').fadeIn();
     },
 
-    'section7': function () {
+    'artisan': function () {
+      $('#navigation, #mapIcon').fadeIn();
     },
 
-    'section8': function () {
+    'subscribe': function () {
+      $('#navigation, #mapIcon').fadeOut();
     },
   };
 
   // Initiate fullpage js
   $('#content').fullpage({
-    anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8'],
+    anchors: ['home', 'journey', 'heritage', 'islands', 'coffee', 'brewing', 'artisan', 'subscribe'],
 
     afterLoad: function (anchorLink, index) {
       afterLoadHandler[anchorLink]();
