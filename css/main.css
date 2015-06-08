@@ -1,3 +1,78 @@
+@font-face {
+  font-family: 'Bodoni MT';
+  src: url("fonts/BOD_R.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni MT';
+  src: url("fonts/BOD_I.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Bodoni MT';
+  src: url("fonts/BOD_B.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni MT';
+  src: url("fonts/BOD_BI.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Bodoni MT Black';
+  src: url("fonts/BOD_BLAR.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni MT Black';
+  src: url("fonts/BOD_BLAI.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Bodoni MT Condensed';
+  src: url("fonts/BOD_CB.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni MT Condensed';
+  src: url("fonts/BOD_CBI.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Bodoni MT Condensed';
+  src: url("fonts/BOD_CI.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Bodoni MT Condensed';
+  src: url("fonts/BOD_CR.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni MT Poster';
+  src: url("fonts/BOD_PSTC.ttf");
+}
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /* line 9, ../vendors/bootstrap/assets/stylesheets/bootstrap/_normalize.scss */
 html {
@@ -8586,13 +8661,14 @@ html {
 body {
   background-color: #000;
   color: #fff;
+  font-family: 'Bodoni MT', serif;
 }
 
-/* line 17, ../scss/main.scss */
+/* line 18, ../scss/main.scss */
 .navbar {
   background-color: rgba(0, 0, 0, 0);
 }
-/* line 21, ../scss/main.scss */
+/* line 22, ../scss/main.scss */
 .navbar .navbar-brand {
   position: absolute;
   width: 100%;
@@ -8601,7 +8677,7 @@ body {
   margin: auto;
 }
 
-/* line 30, ../scss/main.scss */
+/* line 31, ../scss/main.scss */
 #navigation {
   position: fixed;
   z-index: 1;
@@ -8610,9 +8686,8 @@ body {
   padding: 10px 40px 0 10px;
   border: 1px solid #fff;
 }
-/* line 38, ../scss/main.scss */
+/* line 39, ../scss/main.scss */
 #navigation li > a {
-  font-family: serif;
   font-style: italic;
   color: #fff;
   font-size: 12px;

@@ -1,6 +1,6 @@
 $icon-font-path: "../vendors/bootstrap/assets/fonts/bootstrap/";
 
-@import 'variables';
+@import 'fonts';
 
 @import '../vendors/bootstrap/assets/stylesheets/bootstrap';
 
@@ -12,6 +12,7 @@ html {
 body {
   background-color: #000;
   color: #fff;
+  font-family: 'Bodoni MT', serif;
 }
 
 .navbar {
@@ -36,7 +37,6 @@ body {
   border: 1px solid #fff;
 
   li > a{
-    font-family: serif;
     font-style: italic;
     color: #fff;
     font-size: 12px;
