@@ -1,0 +1,34 @@
+$icon-font-path: "/vendors/bootstrap/assets/fonts/bootstrap/";
+
+@import 'variables';
+
+@import '../vendors/bootstrap/assets/stylesheets/bootstrap';
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar {
+  background-color: rgba(0,0,0,0);
+
+  .navbar-brand
+  {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+#content{
+  .section{
+    padding-top: 60px;
+  }
+}
