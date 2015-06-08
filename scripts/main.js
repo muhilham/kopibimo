@@ -3,35 +3,42 @@ $(document).ready(function () {
   // All animation goes here
   var afterLoadHandler = {
     'home': function () {
-      $('#navigation, #mapIcon').fadeOut();
     },
 
     'journey': function () {
-      $('#navigation, #mapIcon').fadeIn();
+      $('.anim-s2-1').fadeIn();
+      $('.anim-s2-2').delay(600).fadeIn(100).addClass('fadeInLeft');
     },
 
     'heritage': function () {
-      $('#navigation, #mapIcon').fadeIn();
+      $('.anim-s3-1').fadeIn(100).addClass('fadeInRight');
+      $('.anim-s3-2').delay(800).fadeIn(100).addClass('fadeInDown');
+
+      $('.anim-s3-6').delay(1800).fadeIn(100).addClass('fadeInLeft');
+      $('.anim-s3-7').delay(2800).css({display: 'inline-block', width:0}).animate({width:100}, 700);
+      $('.anim-s3-8').delay(3600).fadeIn(100).addClass('fadeInDown');
     },
 
     'islands': function () {
-      $('#navigation, #mapIcon').fadeIn();
+      $('.anim-s4-1').fadeIn();
     },
 
     'coffee': function () {
-      $('#navigation, #mapIcon').fadeIn();
+      $('.anim-s5-1').fadeIn(100).addClass('fadeInLeft');
+      $('.anim-s5-2').delay(800).css({display: 'inline-block', width:0}).animate({width:100}, 700);
+      $('.anim-s5-3').delay(1800).fadeIn(100).addClass('fadeInDown');
+      $('.anim-s5-4').delay(2800).fadeIn();
     },
 
     'brewing': function () {
-      $('#navigation, #mapIcon').fadeIn();
     },
 
     'artisan': function () {
-      $('#navigation, #mapIcon').fadeIn();
+      $('.anim-s7-1').fadeIn();
     },
 
     'subscribe': function () {
-      $('#navigation, #mapIcon').fadeOut();
+      $('.anim-s8-1').fadeIn();
     },
   };
 
@@ -40,7 +47,18 @@ $(document).ready(function () {
     anchors: ['home', 'journey', 'heritage', 'islands', 'coffee', 'brewing', 'artisan', 'subscribe'],
 
     afterLoad: function (anchorLink, index) {
+      if (index !== 1 && index !== 8) {
+        $('#navigation, #mapIcon').fadeIn();
+      }
+
       afterLoadHandler[anchorLink]();
+    },
+
+    onLeave: function (index, nextIndex, direction) {
+      $('.animated').fadeOut();
+      if (nextIndex === 1 || nextIndex === 8) {
+        $('#navigation, #mapIcon').fadeOut();
+      }
     }
   });
 

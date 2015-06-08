@@ -25,12 +25,14 @@
       font-size: 32px;
       color: #fff;
     }
-    span{
-      display: inline-block;
+    .line{
       border-bottom: 1px solid #fff;
-      width: 100px;
-      margin-left: 10px;
+      margin-left: 4px;
     }
+  }
+
+  h3{
+    padding-top: 85%;
   }
 }
 
@@ -38,8 +40,10 @@
 
 #section5{
   h2{
-    text-align: center;
-    text-indent: -190px;
+    position: relative;
+    left: 120px;
+    text-align: left;
+    text-indent: -80px;
     font-size: 90px;
     line-height: 76px;
     margin-bottom: 30px;
@@ -49,12 +53,19 @@
       font-size: 32px;
       color: #fff;
     }
-    span{
-      display: inline-block;
+
+    .line{
       border-bottom: 1px solid #fff;
-      width: 100px;
       margin: 0 -10px;
     }
+  }
+}
+
+#section6{}
+
+#section7{
+  h2{
+    padding-top: 50%;
   }
 }
 

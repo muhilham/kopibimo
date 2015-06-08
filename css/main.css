@@ -1,78 +1,3 @@
-@font-face {
-  font-family: 'Bodoni MT';
-  src: url("../fonts/BOD_R.TTF");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Bodoni MT';
-  src: url("../fonts/BOD_I.TTF");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Bodoni MT';
-  src: url("../fonts/BOD_B.TTF");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Bodoni MT';
-  src: url("../fonts/BOD_BI.TTF");
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Bodoni MT Black';
-  src: url("../fonts/BOD_BLAR.TTF");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Bodoni MT Black';
-  src: url("../fonts/BOD_BLAI.TTF");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Bodoni MT Condensed';
-  src: url("../fonts/BOD_CB.TTF");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Bodoni MT Condensed';
-  src: url("../fonts/BOD_CBI.TTF");
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Bodoni MT Condensed';
-  src: url("../fonts/BOD_CI.TTF");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Bodoni MT Condensed';
-  src: url("../fonts/BOD_CR.TTF");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Bodoni MT Poster';
-  src: url("../fonts/BOD_PSTC.TTF");
-}
-
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /* line 9, ../vendors/bootstrap/assets/stylesheets/bootstrap/_normalize.scss */
 html {
@@ -8651,77 +8576,79 @@ button.close {
     display: none !important;
   }
 }
-/* line 7, ../scss/main.scss */
-html {
-  position: relative;
-  min-height: 100%;
+@font-face {
+  font-family: 'Bodoni MT';
+  src: url("../fonts/BOD_R.TTF");
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* line 12, ../scss/main.scss */
-body {
-  background-color: #000;
-  color: #fff;
-  font-family: 'Bodoni MT', serif;
-  position: relative;
-}
-
-/* line 19, ../scss/main.scss */
-.navbar {
-  background-color: rgba(0, 0, 0, 0);
-}
-/* line 23, ../scss/main.scss */
-.navbar .navbar-brand {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  text-align: center;
-  margin: auto;
-}
-
-/* line 32, ../scss/main.scss */
-#navigation {
-  position: fixed;
-  z-index: 1;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 40px 0 10px;
-  border: 1px solid #fff;
-}
-/* line 40, ../scss/main.scss */
-#navigation li > a {
+@font-face {
+  font-family: 'Bodoni MT';
+  src: url("../fonts/BOD_I.TTF");
+  font-weight: normal;
   font-style: italic;
-  color: #fff;
-  font-size: 12px;
+}
+
+@font-face {
+  font-family: 'Bodoni MT';
+  src: url("../fonts/BOD_B.TTF");
   font-weight: bold;
+  font-style: normal;
 }
 
-/* line 48, ../scss/main.scss */
-#mapIcon {
-  position: fixed;
-  z-index: 1;
-  bottom: 15px;
-  right: 15px;
-  font-size: 48px;
-}
-/* line 55, ../scss/main.scss */
-#mapIcon a {
-  color: #fff;
+@font-face {
+  font-family: 'Bodoni MT';
+  src: url("../fonts/BOD_BI.TTF");
+  font-weight: bold;
+  font-style: italic;
 }
 
-/* line 61, ../scss/main.scss */
-#content .section {
-  padding-top: 60px;
-  position: relative;
+@font-face {
+  font-family: 'Bodoni MT Black';
+  src: url("../fonts/BOD_BLAR.TTF");
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* line 67, ../scss/main.scss */
-#footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #333;
-  padding: 15px 0;
+@font-face {
+  font-family: 'Bodoni MT Black';
+  src: url("../fonts/BOD_BLAI.TTF");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Bodoni MT Condensed';
+  src: url("../fonts/BOD_CB.TTF");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni MT Condensed';
+  src: url("../fonts/BOD_CBI.TTF");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Bodoni MT Condensed';
+  src: url("../fonts/BOD_CI.TTF");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Bodoni MT Condensed';
+  src: url("../fonts/BOD_CR.TTF");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni MT Poster';
+  src: url("../fonts/BOD_PSTC.TTF");
 }
 
 /* line 4, ../scss/_sections.scss */
@@ -8750,43 +8677,130 @@ body {
   color: #fff;
 }
 /* line 28, ../scss/_sections.scss */
-#section3 h2 span {
-  display: inline-block;
+#section3 h2 .line {
   border-bottom: 1px solid #fff;
-  width: 100px;
-  margin-left: 10px;
+  margin-left: 4px;
+}
+/* line 34, ../scss/_sections.scss */
+#section3 h3 {
+  padding-top: 85%;
 }
 
-/* line 40, ../scss/_sections.scss */
+/* line 42, ../scss/_sections.scss */
 #section5 h2 {
-  text-align: center;
-  text-indent: -190px;
+  position: relative;
+  left: 120px;
+  text-align: left;
+  text-indent: -80px;
   font-size: 90px;
   line-height: 76px;
   margin-bottom: 30px;
   padding-top: 50%;
 }
-/* line 48, ../scss/_sections.scss */
+/* line 52, ../scss/_sections.scss */
 #section5 h2 small {
   font-size: 32px;
   color: #fff;
 }
-/* line 52, ../scss/_sections.scss */
-#section5 h2 span {
-  display: inline-block;
+/* line 57, ../scss/_sections.scss */
+#section5 h2 .line {
   border-bottom: 1px solid #fff;
-  width: 100px;
   margin: 0 -10px;
 }
 
-/* line 62, ../scss/_sections.scss */
+/* line 67, ../scss/_sections.scss */
+#section7 h2 {
+  padding-top: 50%;
+}
+
+/* line 73, ../scss/_sections.scss */
 #section8 h2 {
   padding-top: 40%;
 }
-/* line 66, ../scss/_sections.scss */
+/* line 77, ../scss/_sections.scss */
 #section8 input {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 0;
   border: 2px solid #fff;
   margin: 40px 0;
+}
+
+/* line 8, ../scss/main.scss */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 13, ../scss/main.scss */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Bodoni MT', serif;
+  position: relative;
+}
+
+/* line 20, ../scss/main.scss */
+.navbar {
+  background-color: rgba(0, 0, 0, 0);
+}
+/* line 24, ../scss/main.scss */
+.navbar .navbar-brand {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin: auto;
+}
+
+/* line 33, ../scss/main.scss */
+#navigation {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 40px 0 10px;
+  border: 1px solid #fff;
+}
+/* line 42, ../scss/main.scss */
+#navigation li > a {
+  font-style: italic;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* line 50, ../scss/main.scss */
+#mapIcon {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  bottom: 15px;
+  right: 15px;
+  font-size: 48px;
+}
+/* line 58, ../scss/main.scss */
+#mapIcon a {
+  color: #fff;
+}
+
+/* line 64, ../scss/main.scss */
+#content .section {
+  padding-top: 60px;
+  position: relative;
+}
+
+/* line 70, ../scss/main.scss */
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  padding: 15px 0;
+}
+
+/* line 79, ../scss/main.scss */
+.animated {
+  display: none;
 }

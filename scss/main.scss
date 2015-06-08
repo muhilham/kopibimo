@@ -1,8 +1,9 @@
 $icon-font-path: "../vendors/bootstrap/assets/fonts/bootstrap/";
+@import '../vendors/bootstrap/assets/stylesheets/bootstrap';
 
 @import 'fonts';
+@import 'sections';
 
-@import '../vendors/bootstrap/assets/stylesheets/bootstrap';
 
 html {
   position: relative;
@@ -30,6 +31,7 @@ body {
 }
 
 #navigation{
+  display: none;
   position: fixed;
   z-index: 1;
   bottom: 15px;
@@ -46,6 +48,7 @@ body {
 }
 
 #mapIcon{
+  display: none;
   position: fixed;
   z-index: 1;
   bottom: 15px;
@@ -73,5 +76,8 @@ body {
   padding: 15px 0;
 }
 
-@import 'sections';
+.animated {
+  display: none;
+}
+
 
