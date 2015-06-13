@@ -8633,85 +8633,181 @@ button.close {
 }
 /* line 4, ../scss/_sections.scss */
 #section2 h2 {
-  padding-top: 50%;
-  font-size: 32px;
+  margin-top: 50%;
+  text-indent: -99999px;
+  background: url("../images/journey-title.png") top left no-repeat;
+  background-size: contain;
+  height: 400px;
+  opacity: 0.8;
 }
-/* line 9, ../scss/_sections.scss */
+/* line 13, ../scss/_sections.scss */
 #section2 p {
   padding-top: 50%;
-  line-height: 30px;
-  font-size: 18px;
+  line-height: 26px;
+  font-size: 16px;
 }
 
-/* line 17, ../scss/_sections.scss */
+/* line 21, ../scss/_sections.scss */
 #section3 h2 {
   position: relative;
-  padding-top: 50%;
   left: 60px;
   text-indent: -60px;
   font-size: 48px;
 }
-/* line 24, ../scss/_sections.scss */
+/* line 27, ../scss/_sections.scss */
 #section3 h2 small {
   font-size: 32px;
   color: #fff;
 }
-/* line 28, ../scss/_sections.scss */
+/* line 31, ../scss/_sections.scss */
 #section3 h2 .line {
   border-bottom: 1px solid #fff;
   margin-left: 4px;
 }
-/* line 34, ../scss/_sections.scss */
+/* line 37, ../scss/_sections.scss */
 #section3 h3 {
-  padding-top: 85%;
+  margin-top: 60px;
+}
+/* line 41, ../scss/_sections.scss */
+#section3 .tree-container {
+  height: 200px;
+  position: relative;
+  margin-left: 200px;
+  margin-right: 40px;
+}
+/* line 47, ../scss/_sections.scss */
+#section3 .tree-container .tree {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+/* line 54, ../scss/_sections.scss */
+#section3 .tree-container .tree-text {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 120px;
+  height: 100%;
+}
+/* line 62, ../scss/_sections.scss */
+#section3 .tree-container #line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  border-left: 2px dotted white;
+}
+/* line 70, ../scss/_sections.scss */
+#section3 .tree-container #onethousandone {
+  position: absolute;
+  top: -32px;
+  left: 0;
+  font-size: 24px;
+}
+/* line 77, ../scss/_sections.scss */
+#section3 .tree-container #konturkultur {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
 }
 
-/* line 42, ../scss/_sections.scss */
+/* line 87, ../scss/_sections.scss */
+#section4 .indomap {
+  margin: -80px 0 30px 0;
+}
+
+/* line 93, ../scss/_sections.scss */
 #section5 h2 {
   position: relative;
-  left: 120px;
+  display: inline-block;
+  width: 500px;
+  left: 50%;
   text-align: left;
   text-indent: -80px;
   font-size: 90px;
   line-height: 76px;
-  margin-bottom: 30px;
-  padding-top: 50%;
+  margin: 80px 0 30px 0;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
-/* line 52, ../scss/_sections.scss */
+/* line 106, ../scss/_sections.scss */
 #section5 h2 small {
   font-size: 32px;
   color: #fff;
 }
-/* line 57, ../scss/_sections.scss */
+/* line 111, ../scss/_sections.scss */
 #section5 h2 .line {
   border-bottom: 1px solid #fff;
   margin: 0 -10px;
 }
 
-/* line 67, ../scss/_sections.scss */
-#section7 h2 {
-  padding-top: 50%;
+/* line 121, ../scss/_sections.scss */
+#section7 .hand-icon {
+  width: 80px;
+  margin: 15px 0;
+}
+/* line 126, ../scss/_sections.scss */
+#section7 .coffeedrip {
+  width: 60px;
+  margin: 20px 0;
 }
 
-/* line 73, ../scss/_sections.scss */
-#section8 h2 {
-  padding-top: 40%;
+/* line 133, ../scss/_sections.scss */
+#section8 .input-container {
+  position: relative;
 }
-/* line 77, ../scss/_sections.scss */
-#section8 input {
+/* line 136, ../scss/_sections.scss */
+#section8 .input-container input {
+  color: #fff;
   background-color: transparent;
   border-radius: 0;
   border: 2px solid #fff;
   margin: 40px 0;
+  height: 68px;
+  z-index: 3;
+}
+/* line 146, ../scss/_sections.scss */
+#section8 .input-container button {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+/* line 157, ../scss/_sections.scss */
+#section8 .input-container #inputPlaceholder {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  width: 100%;
+  font-size: 18px;
+  z-index: -1;
+  cursor: normal;
+}
+/* line 168, ../scss/_sections.scss */
+#section8 .socialbtn {
+  opacity: 0.4;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 172, ../scss/_sections.scss */
+#section8 .socialbtn:hover {
+  opacity: 1;
 }
 
-/* line 8, ../scss/main.scss */
+/* line 9, ../scss/main.scss */
 html {
   position: relative;
   min-height: 100%;
 }
 
-/* line 13, ../scss/main.scss */
+/* line 14, ../scss/main.scss */
 body {
   background-color: #000;
   color: #fff;
@@ -8719,12 +8815,12 @@ body {
   position: relative;
 }
 
-/* line 20, ../scss/main.scss */
+/* line 21, ../scss/main.scss */
 .navbar {
   background-color: transparent;
   border: none;
 }
-/* line 24, ../scss/main.scss */
+/* line 25, ../scss/main.scss */
 .navbar .navbar-brand {
   position: absolute;
   width: 100%;
@@ -8732,12 +8828,12 @@ body {
   text-align: center;
   margin: auto;
 }
-/* line 32, ../scss/main.scss */
+/* line 33, ../scss/main.scss */
 .navbar .navbar-brand > img {
   display: inline-block;
 }
 
-/* line 38, ../scss/main.scss */
+/* line 39, ../scss/main.scss */
 #navigation {
   display: none;
   position: fixed;
@@ -8747,7 +8843,7 @@ body {
   padding: 10px 40px 0 10px;
   border: 1px solid #fff;
 }
-/* line 47, ../scss/main.scss */
+/* line 48, ../scss/main.scss */
 #navigation li > a {
   font-style: italic;
   color: #fff;
@@ -8755,7 +8851,7 @@ body {
   font-weight: bold;
 }
 
-/* line 55, ../scss/main.scss */
+/* line 56, ../scss/main.scss */
 #mapIcon {
   display: none;
   position: fixed;
@@ -8764,17 +8860,17 @@ body {
   right: 15px;
   font-size: 48px;
 }
-/* line 63, ../scss/main.scss */
+/* line 64, ../scss/main.scss */
 #mapIcon a {
   color: #fff;
 }
 
-/* line 69, ../scss/main.scss */
+/* line 70, ../scss/main.scss */
 #content .section {
   position: relative;
   overflow: hidden;
 }
-/* line 74, ../scss/main.scss */
+/* line 75, ../scss/main.scss */
 #content .section-bg {
   position: absolute;
   top: 0;
@@ -8782,12 +8878,24 @@ body {
   width: 100%;
   height: 100%;
 }
-/* line 81, ../scss/main.scss */
+/* line 82, ../scss/main.scss */
 #content .section-bg img {
   width: 100%;
 }
-
 /* line 87, ../scss/main.scss */
+#content .section-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -moz-transform: translateY(-25%);
+  -ms-transform: translateY(-25%);
+  -webkit-transform: translateY(-25%);
+  transform: translateY(-25%);
+}
+
+/* line 98, ../scss/main.scss */
 #footer {
   position: absolute;
   bottom: 0;
@@ -8797,7 +8905,17 @@ body {
   padding: 15px 0;
 }
 
-/* line 96, ../scss/main.scss */
+/* line 107, ../scss/main.scss */
 .animated {
   display: none;
+}
+
+/* line 111, ../scss/main.scss */
+.img-full-width {
+  width: 100%;
+}
+
+/* line 115, ../scss/main.scss */
+.img-full-height {
+  height: 100%;
 }

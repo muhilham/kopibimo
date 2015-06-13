@@ -11,6 +11,7 @@ $(document).ready(function () {
 
       $('.anim-s2-1').delay(600).fadeIn();
       $('.anim-s2-2').delay(1200).fadeIn(100).addClass('fadeInLeft');
+      $('.anim-s2-3').delay(1900).fadeIn(600);
     },
 
     'heritage': function () {
@@ -18,10 +19,12 @@ $(document).ready(function () {
 
       $('.anim-s3-1').delay(600).fadeIn(100).addClass('fadeInRight');
       $('.anim-s3-2').delay(1400).fadeIn(100).addClass('fadeInDown');
-
-      $('.anim-s3-6').delay(2400).fadeIn(100).addClass('fadeInLeft');
-      $('.anim-s3-7').delay(3400).css({display: 'inline-block', width:0}).animate({width:100}, 700);
-      $('.anim-s3-8').delay(4200).fadeIn(100).addClass('fadeInDown');
+      $('.anim-s3-3').delay(2200).fadeIn(600);
+      $('.anim-s3-4').delay(3200).fadeIn(100).animate({height:180}, 1200);
+      $('.anim-s3-5').delay(4800).fadeIn(600);
+      $('.anim-s3-6').delay(5400).fadeIn(100).addClass('fadeInLeft');
+      $('.anim-s3-7').delay(6400).css({display: 'inline-block', width:0}).animate({width:100}, 700);
+      $('.anim-s3-8').delay(7600).fadeIn(100).addClass('fadeInDown');
     },
 
     'islands': function () {
@@ -73,6 +76,19 @@ $(document).ready(function () {
       if (nextIndex === 1 || nextIndex === 8) {
         $('#navigation, #mapIcon').fadeOut();
       }
+    }
+  });
+
+  // Hide placeholder
+  $('input').on('keyup', function (e) {
+    if (e.keyCode === 13) {
+      return;
+    }
+
+    if (!$(this).val()) {
+      $('#inputPlaceholder').show();
+    } else {
+      $('#inputPlaceholder').hide();
     }
   });
 
