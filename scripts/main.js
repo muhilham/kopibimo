@@ -3,11 +3,13 @@ $(document).ready(function () {
   // All animation goes here
   var afterLoadHandler = {
     'home': function () {
-      $('.anim-s1-bg').fadeIn();
+      $('.anim-s1-bg').animate({opacity:1}, 700);
+      $('.anim-s1-bg').get(0).play();
     },
 
     'journey': function () {
-      $('.anim-s2-bg').fadeIn();
+      $('.anim-s2-bg').animate({opacity:1}, 700);
+      $('.anim-s2-bg').get(0).play();
 
       $('.anim-s2-1').delay(600).fadeIn();
       $('.anim-s2-2').delay(1200).fadeIn(100).addClass('fadeInLeft');
@@ -73,6 +75,7 @@ $(document).ready(function () {
 
     onLeave: function (index, nextIndex, direction) {
       $('.animated').fadeOut();
+      $('video').animate({opacity: 0});
       if (nextIndex === 1 || nextIndex === 8) {
         $('#navigation, #mapIcon').fadeOut();
       }

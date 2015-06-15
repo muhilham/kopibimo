@@ -8882,7 +8882,15 @@ body {
 #content .section-bg img {
   width: 100%;
 }
-/* line 87, ../scss/main.scss */
+/* line 86, ../scss/main.scss */
+#content .section-bg video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  opacity: 0;
+}
+/* line 95, ../scss/main.scss */
 #content .section-content {
   position: absolute;
   top: 50%;
@@ -8895,7 +8903,7 @@ body {
   transform: translateY(-25%);
 }
 
-/* line 98, ../scss/main.scss */
+/* line 106, ../scss/main.scss */
 #footer {
   position: absolute;
   bottom: 0;
@@ -8905,17 +8913,17 @@ body {
   padding: 15px 0;
 }
 
-/* line 107, ../scss/main.scss */
+/* line 115, ../scss/main.scss */
 .animated {
   display: none;
 }
 
-/* line 111, ../scss/main.scss */
+/* line 119, ../scss/main.scss */
 .img-full-width {
   width: 100%;
 }
 
-/* line 115, ../scss/main.scss */
+/* line 123, ../scss/main.scss */
 .img-full-height {
   height: 100%;
 }
