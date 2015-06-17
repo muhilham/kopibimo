@@ -45,7 +45,9 @@ $(document).ready(function () {
     },
 
     'brewing': function () {
-      $('.anim-s6-bg').fadeIn();
+      $('.anim-s6-1').fadeIn(800);
+      $('.anim-s6-2').delay(900).animate({opacity:1});
+      $('.anim-s6-3').delay(1200).animate({opacity:1});
     },
 
     'artisan': function () {
@@ -93,6 +95,27 @@ $(document).ready(function () {
     } else {
       $('#inputPlaceholder').hide();
     }
+  });
+
+  // Section 6: show text when hover video
+  $('.js-s6-hover').on('mouseover', function (e) {
+    var _this = $(this);
+    var video = _this.find('video').get(0);
+    var target = $(_this.attr('data-target'));
+
+    video.play();
+    _this.addClass('overlay');
+    target.fadeIn();
+  });
+
+  $('.js-s6-hover').on('mouseleave', function (e) {
+    var _this = $(this);
+    var video = _this.find('video').get(0);
+    var target = $(_this.attr('data-target'));
+
+    video.pause();
+    _this.removeClass('overlay');
+    target.fadeOut();
   });
 
 });

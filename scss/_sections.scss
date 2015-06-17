@@ -115,7 +115,74 @@
   }
 }
 
-#section6{}
+#section6{
+  .shape1{
+    position: absolute;
+    top: -15%;
+    left: -10%;
+    width: 40%;
+    height: 150%;
+    border: 4px solid white;
+    background-color: #000;
+    overflow: hidden;
+
+    @include transform(rotate(-23.5deg));
+  }
+
+  .shape2{
+    position: absolute;
+    bottom: -30%;
+    left: 60%;
+    width: 50%;
+    height: 50%;
+    border: 4px solid white;
+    background-color: #000;
+    overflow: hidden;
+
+    @include transform(rotate(-23.5deg));
+  }
+
+  .shape-content{
+    position: relative;
+    height: 80%;
+    top: 5%;
+    
+    @include transform(rotate(23.5deg));
+
+    video{
+      height: 100%;
+    }
+  }
+
+  .overlay{
+    &:after{
+      content:'';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+    }
+  }
+
+  .s6-text{
+    position: absolute;
+    z-index: 5;
+    display: none;
+  }
+  .s6-text-1{
+    width: 300px;
+    top: 30%;
+    left: 50%;
+  }
+
+  .s6-text-2{
+    width: 150px;
+    top: 30%;
+    left: 10%;
+  }
+}
 
 #section7{
   .hand-icon{
