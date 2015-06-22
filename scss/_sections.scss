@@ -1,6 +1,13 @@
 #section1{}
 
 #section2{
+  #cup{
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    width: 50px;
+  }
+
   h2{
     margin-top: 50%;
     text-indent: -99999px;

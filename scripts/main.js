@@ -14,6 +14,11 @@ $(document).ready(function () {
       $('.anim-s2-1').delay(600).fadeIn();
       $('.anim-s2-2').delay(1200).fadeIn(100).addClass('fadeInLeft');
       $('.anim-s2-3').delay(1900).fadeIn(600);
+      $('.anim-s2-4').delay(2700).fadeIn(600);
+
+      setTimeout(function() {
+        animateCup($('#cup').find('img'));
+      }, 3200);
     },
 
     'heritage': function () {
@@ -117,5 +122,20 @@ $(document).ready(function () {
     _this.removeClass('overlay');
     target.fadeOut();
   });
+
+  function animateCup (obj) {
+    var imgCount = 13,
+        delay = 200,
+        i = 1;
+
+    var interval = setInterval(function () {
+      var src = 'images/cangkir/cangkir' + i + '.png';
+      obj.attr('src', src);
+      i++;
+
+      if (i > imgCount)
+        clearInterval(interval);
+    }, delay);
+  }
 
 });

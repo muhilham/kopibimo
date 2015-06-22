@@ -8632,6 +8632,13 @@ button.close {
   src: url("../fonts/BOD_PSTC.TTF");
 }
 /* line 4, ../scss/_sections.scss */
+#section2 #cup {
+  position: absolute;
+  top: 50px;
+  left: -50px;
+  width: 50px;
+}
+/* line 11, ../scss/_sections.scss */
 #section2 h2 {
   margin-top: 50%;
   text-indent: -99999px;
@@ -8640,49 +8647,49 @@ button.close {
   height: 400px;
   opacity: 0.8;
 }
-/* line 13, ../scss/_sections.scss */
+/* line 20, ../scss/_sections.scss */
 #section2 p {
   padding-top: 50%;
   line-height: 26px;
   font-size: 16px;
 }
 
-/* line 21, ../scss/_sections.scss */
+/* line 28, ../scss/_sections.scss */
 #section3 h2 {
   position: relative;
   left: 60px;
   text-indent: -60px;
   font-size: 48px;
 }
-/* line 27, ../scss/_sections.scss */
+/* line 34, ../scss/_sections.scss */
 #section3 h2 small {
   font-size: 32px;
   color: #fff;
 }
-/* line 31, ../scss/_sections.scss */
+/* line 38, ../scss/_sections.scss */
 #section3 h2 .line {
   border-bottom: 1px solid #fff;
   margin-left: 4px;
 }
-/* line 37, ../scss/_sections.scss */
+/* line 44, ../scss/_sections.scss */
 #section3 h3 {
   margin-top: 60px;
 }
-/* line 41, ../scss/_sections.scss */
+/* line 48, ../scss/_sections.scss */
 #section3 .tree-container {
   height: 200px;
   position: relative;
   margin-left: 200px;
   margin-right: 40px;
 }
-/* line 47, ../scss/_sections.scss */
+/* line 54, ../scss/_sections.scss */
 #section3 .tree-container .tree {
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
 }
-/* line 54, ../scss/_sections.scss */
+/* line 61, ../scss/_sections.scss */
 #section3 .tree-container .tree-text {
   position: absolute;
   right: 0;
@@ -8690,7 +8697,7 @@ button.close {
   width: 120px;
   height: 100%;
 }
-/* line 62, ../scss/_sections.scss */
+/* line 69, ../scss/_sections.scss */
 #section3 .tree-container #line {
   position: absolute;
   top: 0;
@@ -8698,14 +8705,14 @@ button.close {
   height: 0;
   border-left: 2px dotted white;
 }
-/* line 70, ../scss/_sections.scss */
+/* line 77, ../scss/_sections.scss */
 #section3 .tree-container #onethousandone {
   position: absolute;
   top: -32px;
   left: 0;
   font-size: 24px;
 }
-/* line 77, ../scss/_sections.scss */
+/* line 84, ../scss/_sections.scss */
 #section3 .tree-container #konturkultur {
   position: absolute;
   bottom: 0;
@@ -8713,12 +8720,12 @@ button.close {
   width: 100px;
 }
 
-/* line 87, ../scss/_sections.scss */
+/* line 94, ../scss/_sections.scss */
 #section4 .indomap {
   margin: -80px 0 30px 0;
 }
 
-/* line 93, ../scss/_sections.scss */
+/* line 100, ../scss/_sections.scss */
 #section5 h2 {
   position: relative;
   display: inline-block;
@@ -8734,18 +8741,18 @@ button.close {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-/* line 106, ../scss/_sections.scss */
+/* line 113, ../scss/_sections.scss */
 #section5 h2 small {
   font-size: 32px;
   color: #fff;
 }
-/* line 111, ../scss/_sections.scss */
+/* line 118, ../scss/_sections.scss */
 #section5 h2 .line {
   border-bottom: 1px solid #fff;
   margin: 0 -10px;
 }
 
-/* line 119, ../scss/_sections.scss */
+/* line 126, ../scss/_sections.scss */
 #section6 .shape1 {
   position: absolute;
   top: -15%;
@@ -8760,7 +8767,7 @@ button.close {
   -webkit-transform: rotate(-23.5deg);
   transform: rotate(-23.5deg);
 }
-/* line 132, ../scss/_sections.scss */
+/* line 139, ../scss/_sections.scss */
 #section6 .shape2 {
   position: absolute;
   bottom: -30%;
@@ -8775,7 +8782,7 @@ button.close {
   -webkit-transform: rotate(-23.5deg);
   transform: rotate(-23.5deg);
 }
-/* line 145, ../scss/_sections.scss */
+/* line 152, ../scss/_sections.scss */
 #section6 .shape-content {
   position: relative;
   height: 80%;
@@ -8785,11 +8792,11 @@ button.close {
   -webkit-transform: rotate(23.5deg);
   transform: rotate(23.5deg);
 }
-/* line 152, ../scss/_sections.scss */
+/* line 159, ../scss/_sections.scss */
 #section6 .shape-content video {
   height: 100%;
 }
-/* line 158, ../scss/_sections.scss */
+/* line 165, ../scss/_sections.scss */
 #section6 .overlay:after {
   content: '';
   position: absolute;
@@ -8799,41 +8806,41 @@ button.close {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
-/* line 169, ../scss/_sections.scss */
+/* line 176, ../scss/_sections.scss */
 #section6 .s6-text {
   position: absolute;
   z-index: 5;
   display: none;
 }
-/* line 174, ../scss/_sections.scss */
+/* line 181, ../scss/_sections.scss */
 #section6 .s6-text-1 {
   width: 300px;
   top: 30%;
   left: 50%;
 }
-/* line 180, ../scss/_sections.scss */
+/* line 187, ../scss/_sections.scss */
 #section6 .s6-text-2 {
   width: 150px;
   top: 30%;
   left: 10%;
 }
 
-/* line 188, ../scss/_sections.scss */
+/* line 195, ../scss/_sections.scss */
 #section7 .hand-icon {
   width: 80px;
   margin: 15px 0;
 }
-/* line 193, ../scss/_sections.scss */
+/* line 200, ../scss/_sections.scss */
 #section7 .coffeedrip {
   width: 60px;
   margin: 20px 0;
 }
 
-/* line 200, ../scss/_sections.scss */
+/* line 207, ../scss/_sections.scss */
 #section8 .input-container {
   position: relative;
 }
-/* line 203, ../scss/_sections.scss */
+/* line 210, ../scss/_sections.scss */
 #section8 .input-container input {
   color: #fff;
   background-color: transparent;
@@ -8843,7 +8850,7 @@ button.close {
   height: 68px;
   z-index: 3;
 }
-/* line 213, ../scss/_sections.scss */
+/* line 220, ../scss/_sections.scss */
 #section8 .input-container button {
   background: none;
   border: none;
@@ -8851,7 +8858,7 @@ button.close {
   right: 10px;
   top: 10px;
 }
-/* line 224, ../scss/_sections.scss */
+/* line 231, ../scss/_sections.scss */
 #section8 .input-container #inputPlaceholder {
   position: absolute;
   top: 22px;
@@ -8861,7 +8868,7 @@ button.close {
   z-index: -1;
   cursor: normal;
 }
-/* line 235, ../scss/_sections.scss */
+/* line 242, ../scss/_sections.scss */
 #section8 .socialbtn {
   opacity: 0.4;
   -moz-transition: all 0.5s;
@@ -8869,7 +8876,7 @@ button.close {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 239, ../scss/_sections.scss */
+/* line 246, ../scss/_sections.scss */
 #section8 .socialbtn:hover {
   opacity: 1;
 }
