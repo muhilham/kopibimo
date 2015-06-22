@@ -166,6 +166,19 @@ $(document).ready(function () {
     $('.map-caption').hide();
   });
 
+  // Preload images
+  function preloadImg(url){
+    new Image().src = url;
+  }
 
+  preloadImg('images/map/sumatra.png');
+  preloadImg('images/map/jawa.png');
+  preloadImg('images/map/kalimantan.png');
+  preloadImg('images/map/sulawesi.png');
+  preloadImg('images/map/papua.png');
+  preloadImg('images/map/balinusatenggara.png');
+  for(var i = 1; i <= 13; i++){
+    preloadImg('images/cangkir/cangkir'+i+'.png');
+  }
 
 });

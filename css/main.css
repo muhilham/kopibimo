@@ -8632,6 +8632,13 @@ button.close {
   src: url("../fonts/BOD_PSTC.TTF");
 }
 /* line 4, ../scss/_sections.scss */
+#section2 #cup {
+  position: absolute;
+  top: 50px;
+  left: -50px;
+  width: 50px;
+}
+/* line 11, ../scss/_sections.scss */
 #section2 h2 {
   margin-top: 50%;
   text-indent: -99999px;
@@ -8640,49 +8647,49 @@ button.close {
   height: 400px;
   opacity: 0.8;
 }
-/* line 13, ../scss/_sections.scss */
+/* line 20, ../scss/_sections.scss */
 #section2 p {
   padding-top: 50%;
   line-height: 26px;
   font-size: 16px;
 }
 
-/* line 21, ../scss/_sections.scss */
+/* line 28, ../scss/_sections.scss */
 #section3 h2 {
   position: relative;
   left: 60px;
   text-indent: -60px;
   font-size: 48px;
 }
-/* line 27, ../scss/_sections.scss */
+/* line 34, ../scss/_sections.scss */
 #section3 h2 small {
   font-size: 32px;
   color: #fff;
 }
-/* line 31, ../scss/_sections.scss */
+/* line 38, ../scss/_sections.scss */
 #section3 h2 .line {
   border-bottom: 1px solid #fff;
   margin-left: 4px;
 }
-/* line 37, ../scss/_sections.scss */
+/* line 44, ../scss/_sections.scss */
 #section3 h3 {
   margin-top: 60px;
 }
-/* line 41, ../scss/_sections.scss */
+/* line 48, ../scss/_sections.scss */
 #section3 .tree-container {
   height: 200px;
   position: relative;
   margin-left: 200px;
   margin-right: 40px;
 }
-/* line 47, ../scss/_sections.scss */
+/* line 54, ../scss/_sections.scss */
 #section3 .tree-container .tree {
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
 }
-/* line 54, ../scss/_sections.scss */
+/* line 61, ../scss/_sections.scss */
 #section3 .tree-container .tree-text {
   position: absolute;
   right: 0;
@@ -8690,7 +8697,7 @@ button.close {
   width: 120px;
   height: 100%;
 }
-/* line 62, ../scss/_sections.scss */
+/* line 69, ../scss/_sections.scss */
 #section3 .tree-container #line {
   position: absolute;
   top: 0;
@@ -8698,14 +8705,14 @@ button.close {
   height: 0;
   border-left: 2px dotted white;
 }
-/* line 70, ../scss/_sections.scss */
+/* line 77, ../scss/_sections.scss */
 #section3 .tree-container #onethousandone {
   position: absolute;
   top: -32px;
   left: 0;
   font-size: 24px;
 }
-/* line 77, ../scss/_sections.scss */
+/* line 84, ../scss/_sections.scss */
 #section3 .tree-container #konturkultur {
   position: absolute;
   bottom: 0;
@@ -8713,12 +8720,61 @@ button.close {
   width: 100px;
 }
 
-/* line 87, ../scss/_sections.scss */
+/* line 94, ../scss/_sections.scss */
 #section4 .indomap {
-  margin: -80px 0 30px 0;
+  position: relative;
+  margin: -100px 0 30px 0;
+}
+/* line 98, ../scss/_sections.scss */
+#section4 .indomap .block {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+}
+/* line 103, ../scss/_sections.scss */
+#section4 .indomap .block#sumatra {
+  left: 0;
+  top: 5%;
+  width: 27%;
+  height: 70%;
+}
+/* line 110, ../scss/_sections.scss */
+#section4 .indomap .block#sulawesi {
+  left: 51%;
+  top: 30%;
+  width: 14%;
+  height: 43%;
+}
+/* line 117, ../scss/_sections.scss */
+#section4 .indomap .block#jawa {
+  left: 23%;
+  top: 72%;
+  width: 20%;
+  height: 17%;
+}
+/* line 124, ../scss/_sections.scss */
+#section4 .indomap .block#bali {
+  left: 43%;
+  top: 82%;
+  width: 27%;
+  height: 17%;
+}
+/* line 131, ../scss/_sections.scss */
+#section4 .indomap .block#papua {
+  left: 76%;
+  top: 40%;
+  width: 23%;
+  height: 52%;
+}
+/* line 138, ../scss/_sections.scss */
+#section4 .indomap .block#kalimantan {
+  left: 30%;
+  top: 15%;
+  width: 22%;
+  height: 50%;
 }
 
-/* line 93, ../scss/_sections.scss */
+/* line 153, ../scss/_sections.scss */
 #section5 h2 {
   position: relative;
   display: inline-block;
@@ -8734,23 +8790,24 @@ button.close {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-/* line 106, ../scss/_sections.scss */
+/* line 166, ../scss/_sections.scss */
 #section5 h2 small {
   font-size: 32px;
   color: #fff;
 }
-/* line 111, ../scss/_sections.scss */
+/* line 171, ../scss/_sections.scss */
 #section5 h2 .line {
   border-bottom: 1px solid #fff;
   margin: 0 -10px;
 }
 
-/* line 119, ../scss/_sections.scss */
+/* line 179, ../scss/_sections.scss */
 #section6 .shape1 {
   position: absolute;
+  z-index: 3;
   top: -15%;
   left: -10%;
-  width: 40%;
+  width: 50%;
   height: 150%;
   border: 4px solid white;
   background-color: #000;
@@ -8760,13 +8817,14 @@ button.close {
   -webkit-transform: rotate(-23.5deg);
   transform: rotate(-23.5deg);
 }
-/* line 132, ../scss/_sections.scss */
+/* line 193, ../scss/_sections.scss */
 #section6 .shape2 {
   position: absolute;
-  bottom: -30%;
-  left: 60%;
-  width: 50%;
-  height: 50%;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 65%;
+  height: 100%;
   border: 4px solid white;
   background-color: #000;
   overflow: hidden;
@@ -8775,7 +8833,12 @@ button.close {
   -webkit-transform: rotate(-23.5deg);
   transform: rotate(-23.5deg);
 }
-/* line 145, ../scss/_sections.scss */
+/* line 206, ../scss/_sections.scss */
+#section6 .shape2 .shape-content {
+  height: 100%;
+  top: -40%;
+}
+/* line 212, ../scss/_sections.scss */
 #section6 .shape-content {
   position: relative;
   height: 80%;
@@ -8785,11 +8848,11 @@ button.close {
   -webkit-transform: rotate(23.5deg);
   transform: rotate(23.5deg);
 }
-/* line 152, ../scss/_sections.scss */
+/* line 219, ../scss/_sections.scss */
 #section6 .shape-content video {
   height: 100%;
 }
-/* line 158, ../scss/_sections.scss */
+/* line 225, ../scss/_sections.scss */
 #section6 .overlay:after {
   content: '';
   position: absolute;
@@ -8799,41 +8862,47 @@ button.close {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
-/* line 169, ../scss/_sections.scss */
+/* line 236, ../scss/_sections.scss */
 #section6 .s6-text {
   position: absolute;
   z-index: 5;
   display: none;
 }
-/* line 174, ../scss/_sections.scss */
+/* line 241, ../scss/_sections.scss */
 #section6 .s6-text-1 {
   width: 300px;
   top: 30%;
   left: 50%;
 }
-/* line 180, ../scss/_sections.scss */
+/* line 247, ../scss/_sections.scss */
 #section6 .s6-text-2 {
   width: 150px;
   top: 30%;
   left: 10%;
 }
+/* line 253, ../scss/_sections.scss */
+#section6 .s6-text-3 {
+  width: 250px;
+  bottom: 10%;
+  right: 10%;
+}
 
-/* line 188, ../scss/_sections.scss */
+/* line 261, ../scss/_sections.scss */
 #section7 .hand-icon {
   width: 80px;
   margin: 15px 0;
 }
-/* line 193, ../scss/_sections.scss */
+/* line 266, ../scss/_sections.scss */
 #section7 .coffeedrip {
   width: 60px;
   margin: 20px 0;
 }
 
-/* line 200, ../scss/_sections.scss */
+/* line 273, ../scss/_sections.scss */
 #section8 .input-container {
   position: relative;
 }
-/* line 203, ../scss/_sections.scss */
+/* line 276, ../scss/_sections.scss */
 #section8 .input-container input {
   color: #fff;
   background-color: transparent;
@@ -8843,7 +8912,7 @@ button.close {
   height: 68px;
   z-index: 3;
 }
-/* line 213, ../scss/_sections.scss */
+/* line 286, ../scss/_sections.scss */
 #section8 .input-container button {
   background: none;
   border: none;
@@ -8851,7 +8920,7 @@ button.close {
   right: 10px;
   top: 10px;
 }
-/* line 224, ../scss/_sections.scss */
+/* line 297, ../scss/_sections.scss */
 #section8 .input-container #inputPlaceholder {
   position: absolute;
   top: 22px;
@@ -8861,7 +8930,7 @@ button.close {
   z-index: -1;
   cursor: normal;
 }
-/* line 235, ../scss/_sections.scss */
+/* line 308, ../scss/_sections.scss */
 #section8 .socialbtn {
   opacity: 0.4;
   -moz-transition: all 0.5s;
@@ -8869,7 +8938,7 @@ button.close {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 239, ../scss/_sections.scss */
+/* line 312, ../scss/_sections.scss */
 #section8 .socialbtn:hover {
   opacity: 1;
 }
@@ -8982,7 +9051,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 15px 0;
 }
 
