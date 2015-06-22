@@ -8,6 +8,10 @@ $(document).ready(function () {
     },
 
     'journey': function () {
+      var cup = $('#cup').find('img');
+
+      resetCup(cup);
+
       $('.anim-s2-bg').animate({opacity:1}, 700);
       $('.anim-s2-bg').get(0).play();
 
@@ -17,7 +21,7 @@ $(document).ready(function () {
       $('.anim-s2-4').delay(2700).fadeIn(600);
 
       setTimeout(function() {
-        animateCup($('#cup').find('img'));
+        animateCup(cup);
       }, 3200);
     },
 
@@ -53,6 +57,7 @@ $(document).ready(function () {
       $('.anim-s6-1').fadeIn(800);
       $('.anim-s6-2').delay(900).animate({opacity:1});
       $('.anim-s6-3').delay(1200).animate({opacity:1});
+      $('.anim-s6-4').delay(1500).animate({opacity:1});
     },
 
     'artisan': function () {
@@ -136,6 +141,11 @@ $(document).ready(function () {
       if (i > imgCount)
         clearInterval(interval);
     }, delay);
+  }
+
+  function resetCup (obj) {
+    var src = 'images/cangkir/cangkir1.png';
+    obj.attr('src', src);
   }
 
 });

@@ -8755,9 +8755,10 @@ button.close {
 /* line 126, ../scss/_sections.scss */
 #section6 .shape1 {
   position: absolute;
+  z-index: 3;
   top: -15%;
   left: -10%;
-  width: 40%;
+  width: 50%;
   height: 150%;
   border: 4px solid white;
   background-color: #000;
@@ -8767,13 +8768,14 @@ button.close {
   -webkit-transform: rotate(-23.5deg);
   transform: rotate(-23.5deg);
 }
-/* line 139, ../scss/_sections.scss */
+/* line 140, ../scss/_sections.scss */
 #section6 .shape2 {
   position: absolute;
-  bottom: -30%;
-  left: 60%;
-  width: 50%;
-  height: 50%;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 65%;
+  height: 100%;
   border: 4px solid white;
   background-color: #000;
   overflow: hidden;
@@ -8782,7 +8784,12 @@ button.close {
   -webkit-transform: rotate(-23.5deg);
   transform: rotate(-23.5deg);
 }
-/* line 152, ../scss/_sections.scss */
+/* line 153, ../scss/_sections.scss */
+#section6 .shape2 .shape-content {
+  height: 100%;
+  top: -40%;
+}
+/* line 159, ../scss/_sections.scss */
 #section6 .shape-content {
   position: relative;
   height: 80%;
@@ -8792,11 +8799,11 @@ button.close {
   -webkit-transform: rotate(23.5deg);
   transform: rotate(23.5deg);
 }
-/* line 159, ../scss/_sections.scss */
+/* line 166, ../scss/_sections.scss */
 #section6 .shape-content video {
   height: 100%;
 }
-/* line 165, ../scss/_sections.scss */
+/* line 172, ../scss/_sections.scss */
 #section6 .overlay:after {
   content: '';
   position: absolute;
@@ -8806,41 +8813,47 @@ button.close {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
-/* line 176, ../scss/_sections.scss */
+/* line 183, ../scss/_sections.scss */
 #section6 .s6-text {
   position: absolute;
   z-index: 5;
   display: none;
 }
-/* line 181, ../scss/_sections.scss */
+/* line 188, ../scss/_sections.scss */
 #section6 .s6-text-1 {
   width: 300px;
   top: 30%;
   left: 50%;
 }
-/* line 187, ../scss/_sections.scss */
+/* line 194, ../scss/_sections.scss */
 #section6 .s6-text-2 {
   width: 150px;
   top: 30%;
   left: 10%;
 }
+/* line 200, ../scss/_sections.scss */
+#section6 .s6-text-3 {
+  width: 250px;
+  bottom: 10%;
+  right: 10%;
+}
 
-/* line 195, ../scss/_sections.scss */
+/* line 208, ../scss/_sections.scss */
 #section7 .hand-icon {
   width: 80px;
   margin: 15px 0;
 }
-/* line 200, ../scss/_sections.scss */
+/* line 213, ../scss/_sections.scss */
 #section7 .coffeedrip {
   width: 60px;
   margin: 20px 0;
 }
 
-/* line 207, ../scss/_sections.scss */
+/* line 220, ../scss/_sections.scss */
 #section8 .input-container {
   position: relative;
 }
-/* line 210, ../scss/_sections.scss */
+/* line 223, ../scss/_sections.scss */
 #section8 .input-container input {
   color: #fff;
   background-color: transparent;
@@ -8850,7 +8863,7 @@ button.close {
   height: 68px;
   z-index: 3;
 }
-/* line 220, ../scss/_sections.scss */
+/* line 233, ../scss/_sections.scss */
 #section8 .input-container button {
   background: none;
   border: none;
@@ -8858,7 +8871,7 @@ button.close {
   right: 10px;
   top: 10px;
 }
-/* line 231, ../scss/_sections.scss */
+/* line 244, ../scss/_sections.scss */
 #section8 .input-container #inputPlaceholder {
   position: absolute;
   top: 22px;
@@ -8868,7 +8881,7 @@ button.close {
   z-index: -1;
   cursor: normal;
 }
-/* line 242, ../scss/_sections.scss */
+/* line 255, ../scss/_sections.scss */
 #section8 .socialbtn {
   opacity: 0.4;
   -moz-transition: all 0.5s;
@@ -8876,7 +8889,7 @@ button.close {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 246, ../scss/_sections.scss */
+/* line 259, ../scss/_sections.scss */
 #section8 .socialbtn:hover {
   opacity: 1;
 }
