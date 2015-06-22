@@ -148,4 +148,24 @@ $(document).ready(function () {
     obj.attr('src', src);
   }
 
+  // Map hover handler
+  $('.indomap').find('.block').on('mouseover', function () {
+    var _this = $(this);
+    var src = _this.data('src');
+    var content = _this.html();
+    var map = $('.indomap').find('img');
+
+    map.attr('src', src);
+    $('.map-caption').delay(200).html(content).fadeIn();
+  });
+
+  $('.indomap').find('.block').on('mouseleave', function () {
+    var map = $('.indomap').find('img');
+
+    map.attr('src', 'images/map/indonesia.png');
+    $('.map-caption').fadeOut();
+  });
+
+
+
 });

@@ -92,7 +92,60 @@
 
 #section4{
   .indomap{
-    margin: -80px 0 30px 0;
+    position: relative;
+    margin: -100px 0 30px 0;
+
+    .block{
+      position: absolute;
+      cursor: pointer;
+      opacity: 0;
+
+      &#sumatra{
+        left: 0;
+        top: 5%;
+        width: 27%;
+        height: 70%;
+      }
+
+      &#sulawesi{
+        left: 51%;
+        top: 30%;
+        width: 14%;
+        height: 43%;
+      }
+
+      &#jawa{
+        left: 23%;
+        top: 72%;
+        width: 20%;
+        height: 17%;
+      }
+
+      &#bali{
+        left: 43%;
+        top: 82%;
+        width: 27%;
+        height: 17%;
+      }
+
+      &#papua{
+        left: 76%;
+        top: 40%;
+        width: 23%;
+        height: 52%;
+      }
+
+      &#kalimantan{
+        left: 30%;
+        top: 15%;
+        width: 22%;
+        height: 50%;
+      }
+    }
+  }
+
+  .map-caption{
+    // display: none;
   }
 }
 
