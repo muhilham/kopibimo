@@ -163,7 +163,7 @@ $(document).ready(function () {
     var map = $('.indomap').find('img');
 
     map.attr('src', 'images/map/indonesia.png');
-    $('.map-caption').fadeOut();
+    $('.map-caption').hide();
   });
 
 
